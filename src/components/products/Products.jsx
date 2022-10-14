@@ -5,6 +5,8 @@ import useStyles from './styles'
 
 const Products = ({products, onAddToCart}) => {
     const classes = useStyles();
+
+    // if (!products.length) return <p>Loading...</p>;
     
   return (
     <main className={classes.content}>
@@ -17,7 +19,7 @@ const Products = ({products, onAddToCart}) => {
             ))}
         </Grid>
     </main>
-  )
-}
+  );
+};
 
 export default Products
